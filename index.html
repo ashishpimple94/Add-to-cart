@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BOGO Offer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">YAY! It’s BOGO</h1>
+    
+    <div class="option" onclick="selectOption(1)">
+      <label>
+        <input type="radio" name="unit" value="1" checked>
+        <span class="unit">1 Unit</span>
+        <span class="discount">10% Off</span>
+      </label>
+      <span class="price">$10.00 USD</span>
+      <span class="original-price">$24.00 USD</span>
+      <p class="subtext">Standard Price</p>
+    </div>
+
+    <div class="option popular" onclick="selectOption(2)">
+      <label>
+        <input type="radio" name="unit" value="2">
+        <span class="unit">2 Unit</span>
+        <span class="discount">20% Off</span>
+      </label>
+      <span class="badge">MOST POPULAR</span>
+      <span class="price">$18.00 USD</span>
+      <span class="original-price">$24.00 USD</span>
+      <div class="select-group">
+        <div class="select-row">
+          <label>Size</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <label>Colour</label>
+          <select>
+            <option>Black</option>
+            <option>White</option>
+            <option>Red</option>
+          </select>
+        </div>
+        <div class="select-row">
+          <label>Size</label>
+          <select>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+          </select>
+          <label>Colour</label>
+          <select>
+            <option>Colour</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="option" onclick="selectOption(3)">
+      <label>
+        <input type="radio" name="unit" value="3">
+        <span class="unit">3 Unit</span>
+        <span class="discount">30% Off</span>
+      </label>
+      <span class="price">$24.00 USD</span>
+      <span class="original-price">$24.00 USD</span>
+    </div>
+
+    <div class="footer">
+      <span class="free-delivery">Free Delivery</span>
+      <span class="total">Total: <span id="total-price">$10.00 USD</span></span>
+    </div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+    <p class="powered-by">© Powered by Pumper</p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
